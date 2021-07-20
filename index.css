@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+.html,body,*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: auto;
+}
+
+.container{
+    height: auto;
+    width: 969px;
+}
+
+/*start of setting header*/
+
+.header{
+    height: auto;
+    width: auto;
+    margin-top: 52px;
+}
+
+.header>h1{
+    position: relative;
+    font-family: Playfair Displays;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.header>.header_content{
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin-top: 12px;
+}
+
+.header_content>.dot{
+    position: relative;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.header_texte{
+    position: relative;
+    width: 592px;
+    float: left;
+    margin-left: 12px;
+}
+
+.header_texte>p{
+    position: relative;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4f4f4f;
+}
+/*end of setting header*/
+
+.container>img{
+    position: relative;
+    width: 100%;
+    margin-top: 43px;
+}
+
+.section-1{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+
+/*start of setting for nav*/
+
+.section-1>nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 216px;
+    height: 367px;
+    float: right;
+}
+
+nav>.nav_inner{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 136px;
+    height: 261px; 
+    /*background-color: violet;*/
+}
+
+nav>.nav_inner>.nav_inner_element{
+    position: relative;
+    height: 34px;
+    width: auto;
+    /*background-color: thistle;*/
+}
+
+.nav_inner_element>.nav_inner_element_img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: wheat;*/
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.nav_inner_element>.nav_inner_element_img>img{
+    position: relative;
+    width: 27px;
+    height: 25px;
+}
+
+.nav_inner_element>.nav_inner_element_texte{
+    position: relative;
+    /*background-color: turquoise;*/
+    height: 100%;
+    width: 70%;
+    float: right;
+
+}
+
+.nav_inner_element>.nav_inner_element_texte>h6{
+    position: relative;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.nav_inner_element_texte>.nav_inner_element_texte_paragraphe{
+    position: absolute;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    bottom: 1px;
+}
+
+.orange{
+    color: #F2994A;
+}
+
+.black{
+    color: #333333;
+}
+
+/* end of setting for nav*/
+/* start of setting for ingredient*/
+
+.ingredient{
+    /*background-color: bisque;*/
+    height: auto;
+    width: 60%;
+    float: left;
+}
+
+.ingredient>h2{
+    position: relative;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.ingredient_inner{
+    position: relative;
+   /* background-color: blue;*/
+    width: auto;
+    height: auto;
+}
+
+.ingredient_inner_part1{
+    position: relative;
+    /*background-color: aquamarine;*/
+    height: auto;
+    margin-top: 32px;
+}
+
+.ingredient_inner_part1>h2
+,.ingredient_inner_part2>h2{
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ingredient_inner_part2{
+    position: relative;
+    /*background-color: rgb(148, 255, 127);*/
+    height: auto;
+    margin-top: 38px;
+}
+
+
+.checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    /*background-color: #F2994A;*/
+    margin-top: 13px;
+}
+
+.fisrt{
+    margin-top: 31px;
+}
+
+.checkbox-wrapper label{
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox-wrapper input[type='checkbox']{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-wrapper label::before{
+    position: relative;
+    content: '';
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    margin-right: 17px;
+    border: 1px solid #828282;
+    overflow: auto;
+}
+
+.checkbox-wrapper input[type='checkbox']:checked +label::before{
+    content: '\002714';
+    /*background-color: burlywood;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+}
+
+label>p{
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /*background-color: beige;*/
+    width: 541px;
+}
+
+label>p>span{
+    font-weight: 700;
+}
+
+/* en of setting for ingredient*/
+/* start of setting for instruction*/
+
+.instruction{
+    height: auto;
+    width: 579px;
+    float: left;
+    margin-top: 28px;
+}
+
+.instruction>h2{
+    position: relative;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.instruction_inner{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.instruction_wrapper{
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin-top: 34px;
+}
+
+.case{
+    position: relative;
+    width: 51px;
+    height: auto;
+    float: left;
+}
+
+.texte{
+    position: relative;
+    width: 528px; 
+    float: right;
+}
+
+.texte > p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.texte>p>span{
+    font-weight: 700;
+}
+
+
+.pointeur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-color: #F2994A;
+    border-radius: 6px;
+}
+
+.pointeur>p{
+    position: absolute;
+    bottom: 6px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+}
+
+.source{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 57px;
+}
+
+.source>p,.source>div{
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BDBDBD;
+    float: left;
+}
+
+.signature{
+    position: relative;
+    background-color: #ffffff;
+    width: 303px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 93px;   
+}
+
+.signature>p{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin: 0;
+}
+
+.signature>p>span{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.lien{
+    margin-left: 7px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .container{
+        width: 95.2%;
+    }
+
+    .header{
+        width: 96.64%;
+        margin-top: 32px;
+    }
+
+    .header>h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .header_texte{
+        width: 92.75%;
+    }
+    
+    .header_texte>p{
+        font-size: 12px;
+        line-height: 15PX;
+    }
+
+    .container>img{
+        margin-top: 12px;
+    }
+    
+    .section-1{
+        margin-top: 24px;
+    }
+
+    .section-1>nav{
+        justify-content: unset;
+        align-items: unset;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+        width: auto;
+        height: 20vw;/*72.75px*/
+        max-height: 110px;
+        float: none;
+    }
+    
+    nav>.nav_inner{
+        display: grid;
+        grid-template-columns: repeat(3, 34.26%);/*111px*/
+        grid-template-rows: repeat(2, 34.5%);/*26px*/
+        column-gap: 4.1%;/*13.42*/
+        row-gap: 27.5%;/*20.75*/
+        width: clamp(0px,90.75%,475px);
+        height: 100%;
+        max-height: 110px;
+        justify-content: unset;
+    }
+    
+    nav>.nav_inner>.nav_inner_element{
+        height: auto;
+    }
+
+    .nav-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .nav-2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .nav-3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .nav-4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .nav_inner_element>.nav_inner_element_img{
+        width: 16%;
+        height: 80%;
+    }
+    
+    .nav_inner_element>.nav_inner_element_img>img{
+        width: 76.3%;
+        height: 60.75%;
+    }
+    
+    .nav_inner_element>.nav_inner_element_texte{
+        width: 80%;
+    }
+    
+    .nav_inner_element>.nav_inner_element_texte>h6{
+        font-size: clamp(0px,2.2vw,13px);
+        line-height: clamp(0px,2.2vw,12px);
+    }
+    
+    .nav_inner_element_texte>.nav_inner_element_texte_paragraphe{
+        font-size: clamp(0px,2.7vw,15px);
+        line-height: 3.2vw;
+        bottom: 3px;
+    }
+
+    .ingredient{
+        width: 100%;
+        margin-top: 30.25px;
+    }
+
+    .ingredient>h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .ingredient_inner_part1{
+        margin-top: 13px;
+    }
+
+    .ingredient_inner_part1>h2
+    ,.ingredient_inner_part2>h2{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .ingredient_inner_part2>h2{
+        line-height: 24px;
+    }
+
+    .ingredient_inner_part2{
+        margin-top: 39px;
+    }
+
+    .checkbox-wrapper{
+        margin-top: 12px;
+    }
+
+    .checkbox-wrapper label::before{
+        margin-right: 9px;
+    }
+
+    .fisrt{
+        margin-top: 25px;
+    }
+
+    .checkbox-wrapper label{
+        width: 100%;
+    }
+
+    label>p{
+        font-size: 14px;
+        width: 88%;
+    }
+
+    .instruction{
+        width: 98.5%;
+    }   
+
+    .texte{
+        width: 85%; 
+        float: left;
+    }
+
+    .texte > p{
+    font-size: 16px;
+    line-height: 24px;
+    }
+
+    .source{
+        display: flex;
+        flex-flow: column;
+        margin-top: 26px;
+    }
+    
+    .source>p,.source>div{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .lien{
+        margin: 0;
+    }
+}
